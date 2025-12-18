@@ -81,6 +81,7 @@ class MyApp extends StatelessWidget {
               child: Text('follow', style: TextStyle(color: Colors.white)),
             ),
 
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 18),
 
@@ -141,10 +142,15 @@ class MyApp extends StatelessWidget {
               ),
             ),
 
-            const SizedBox(height: 10),
+            const SizedBox(height: 0),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 18),
+              padding: const EdgeInsets.only(
+                top: 10,
+                left: 18,
+                right: 18,
+                bottom: 0,
+              ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -157,10 +163,14 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
-            const SizedBox(height: 0),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 18),
+                padding: const EdgeInsets.only(
+                  top: 0,
+                  left: 18,
+                  right: 18,
+                  bottom: 0,
+                ),
                 child: GridView.count(
                   crossAxisCount: 2,
                   childAspectRatio: 1,
