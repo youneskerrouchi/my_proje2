@@ -47,12 +47,12 @@ class MyApp extends StatelessWidget {
                     bottom: -15,
                     left: 0,
                     right: 0,
-
                     child: CircleAvatar(
                       radius: 70,
-                      child: CircleAvatar(
-                        radius: 70,
+                      backgroundColor: Colors.white,
 
+                      child: CircleAvatar(
+                        radius: 60,
                         backgroundImage: NetworkImage(
                           'https://cdn.shopaccino.com/igmguru/products/flutter-igmguru_1527424732_xl.jpg?v=546',
                         ),
